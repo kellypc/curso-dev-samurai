@@ -38,6 +38,7 @@
 
       canvasCtx.fillRect(x, y, w, h)
 
+      //desenho das raquetes
       canvasCtx.fillRect(10, 100, lineWidth, 200)
 
       canvasCtx.fillRect(
@@ -45,6 +46,11 @@
         lineWidth,
         200
       )
+
+      //desenho da bolinha
+      canvasCtx.beginPath()
+      canvasCtx.arc(200, 300, 20, 0, 2 * Math.PI, false)
+      canvasCtx.fill()
     }
 
     setup()
